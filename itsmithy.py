@@ -13,3 +13,7 @@ def hello_world():
     #return "<p>Hello, hmmmItSmiKDKDKDthy</p>"
     items = ['Item 1', 'Item 2', 'Item 3']
     return render_template('index.html', items=items)
+
+if __name__ == '__main__':
+
+ app.run(debug=False,port=8080,host="0.0.0.0")
