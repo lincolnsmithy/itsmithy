@@ -1,7 +1,7 @@
 FROM python:3.11
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /itsmithflask
 
 # Copy the current directory contents into the container at /app
 COPY . ./
@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 # Run app.py when the container launches
-CMD python app.py
+CMD python itsmithy.py
